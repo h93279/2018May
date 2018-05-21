@@ -28,7 +28,7 @@
     background: rgba(255, 255, 255, 0.5);
 }
 
-/* 左小白框內框*/
+/* 左小白框內框*/ 
 #C-categoryButton{
     display: block;
     margin: auto;
@@ -62,3 +62,7 @@
     overflow-y: scroll;
 }
 /*----網頁框架ending----*/
+
+.nav-link{
+    text-align: center;
+}
