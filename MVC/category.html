@@ -20,12 +20,11 @@
                         TODAY
                     </a> 
                     <div id="searchbar1" style="position:fixed;left:500px;" >
-                        <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#searchbar">
-                                搜尋
-                        </button> 
-                        <div id="searchbar" class="collapse in">
-                                <input class="form" type="search" style="text-align: center;" placeholder="關鍵字" aria-label="Search" style="margin-right:2px;">
-                                <button class="btn btn-outline-danger" type="submit">搜尋</button>
+                        <div class="input-group mb-3">
+                            <input type="text" style="text-align: center;" class="form-control" placeholder="關鍵字" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">搜尋本站</button>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -34,13 +33,17 @@
                 </nav>
             </div>            
         </div>
+        <!--左邊小白框B+內框C+分類連結-->
         <div class="row" id="B-categoryButton">
             <div class="col">
                 <div class="row" id="C-categoryButton">
                     <div class="col">
                         <ul class="nav nav-pills flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <li class="nav-item">
-                                <a class="nav-link active" id="cate1-tab" data-toggle="pill" href="#cate1" role="tab" aria-controls="cate1" aria-selected="true">分類1</a>
+                                <a class="nav-link  active" href="/home.html">-x 回首頁 x-</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="cate1-tab" data-toggle="pill" href="#cate1" role="tab" aria-controls="cate1" aria-selected="true">分類1</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="cate2-tab" data-toggle="pill" href="#cate2" role="tab" aria-controls="cate2" aria-selected="false">分類2</a>
@@ -48,14 +51,21 @@
                             <li class="nav-item">
                                 <a class="nav-link" id="cate3-tab" data-toggle="pill" href="#cate3" role="tab" aria-controls="cate3" aria-selected="false">分類3</a>
                             </li>
+                        </ul>
+                        <hr>
+                        <ul class="nav nav-pills nav-fill"id="eventList">
                             <li class="nav-item">
-                                <a class="nav-link" id="cate4-tab" data-toggle="pill" href="#cate4" role="tab" aria-controls="cate4" aria-selected="false">分類4</a>
+                                <a class="nav-link disabled" href="#">-× ✿ ×-<br>六月活動<br>敬請期待</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">-× ✿ ×-<br>七月活動<br>敬請期待</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <!--右邊大白框B+內框C+內容-->
         <div class="row" id="B">
             <div class="col-12" id="Ba">
                 <div class="row" id="C">
@@ -148,22 +158,6 @@
                                         <h4><b>3標題標題</b></h4>
                                         <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
                                     </div>
-                                    <div class="col-3"></div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="cate4" role="tabpanel" aria-labelledby="cate4-tab">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
-                                        <h4><b>4標題標題</b></h4>
-                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
-                                    </div>
-                                    <div class="col-3">
-                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
-                                        <h4><b>4標題標題</b></h4>
-                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
-                                    </div>
-                                    <div class="col-3"></div>
                                     <div class="col-3"></div>
                                 </div>
                             </div>
