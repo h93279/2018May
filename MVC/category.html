@@ -1,18 +1,23 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>HOME - TODAY | Today, Be myself.</title>
+    <title>分類 - TODAY | Today, Be myself.</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/categoryStyle.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/js/jquery.mCustomScrollbar.min.css">
+    <script src="/js/jquery.mCustomScrollbar.min.css"></script>
+    <script>
+        (function($){
+                $(window).load(function(){
+                $(".content").mCustomScrollbar();
+            });
+        })(jQuery);
     </script>
-    <link href="jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="jquery.mCustomScrollbar.concat.min.js"></script>
-    
 </head>
   <body>
     <div class="container-fluid" id="container-fluid">
@@ -22,22 +27,15 @@
                     <a class="navbar-brand" href="/category.html">
                         <img src="/images/logo.png" width="70" class="d-inline-block align-center" alt="">
                         TODAY
-                    </a>
-                    <div class="btn-group" role="group" aria-label="">
-                        <button type="button" class="btn btn-outline-danger" style="margin-right:1px;">外套</button>
-                        <button type="button" class="btn btn-outline-dark" style="margin-right:1px;">上衣</button>
-                        <button type="button" class="btn btn-outline-danger" style="margin-right:1px;">褲子</button>
-                        <button type="button" class="btn btn-outline-dark" style="margin-right:1px;">內搭</button>
-                        <button type="button" class="btn btn-outline-danger" style="margin-right:1px;">配件</button>
-                    </div>
-                    <button type="button" class="btn btn-dark" style="margin-left:2px;" data-toggle="collapse" data-target="#searchbar">
-                        搜尋
-                    </button>
-                    <div id="searchbar" class="collapse in">
-                        <form class="form-inline">
-                            <input class="form" type="search" placeholder="Search" aria-label="Search" style="margin-right:1px;">
-                            <button class="btn btn-outline-success" type="submit">搜尋</button>
-                        </form>
+                    </a> 
+                    <div id="searchbar1" style="position:fixed;left:500px;" >
+                        <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#searchbar">
+                                搜尋
+                        </button> 
+                        <div id="searchbar" class="collapse in">
+                                <input class="form" type="search" style="text-align: center;" placeholder="關鍵字" aria-label="Search" style="margin-right:2px;">
+                                <button class="btn btn-outline-danger" type="submit">搜尋</button>
+                        </div>
                     </div>
                     <div>
                         <a href="/login.html"><input type="submit" class="btn btn-outline-danger" style="position: absolute; right: 2em;" value="會員登入"/></a>
@@ -45,61 +43,146 @@
                 </nav>
             </div>            
         </div>
+        <div class="row" id="B-categoryButton">
+            <div class="col">
+                <div class="row" id="C-categoryButton">
+                    <div class="col">
+                        <ul class="nav nav-pills flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="cate1-tab" data-toggle="pill" href="#cate1" role="tab" aria-controls="cate1" aria-selected="true">分類1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="cate2-tab" data-toggle="pill" href="#cate2" role="tab" aria-controls="cate2" aria-selected="false">分類2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="cate3-tab" data-toggle="pill" href="#cate3" role="tab" aria-controls="cate3" aria-selected="false">分類3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="cate4-tab" data-toggle="pill" href="#cate4" role="tab" aria-controls="cate4" aria-selected="false">分類4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row" id="B">
             <div class="col-12" id="Ba">
                 <div class="row" id="C">
-                    <div class="col-12" id="Ca">
-                        <div class="content" data-mcs-theme="rounded-dots">
-                            <div class="row">
-                                <div class="col-3 productBox">
-                                    <img src='https://placehold.it/160x160?text=Pic' alt=''/>
-                                    <h4><b>標題標題</b></h4>
-                                    <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
-                                </div>     
-                                <div class="col-3 productBox">
-                                    <img src='https://placehold.it/160x160?text=Pic' alt=''/>
-                                    <h4><b>標題標題</b></h4>
-                                    <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
-                                </div>     
-                                <div class="col-3 productBox">
-                                    <img src='https://placehold.it/160x160?text=Pic' alt=''/>
-                                    <h4><b>標題標題</b></h4>
-                                    <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
-                                </div>     
-                                <div class="col-3 productBox">
-                                    <img src='https://placehold.it/160x160?text=Pic' alt=''/>
-                                    <h4><b>標題標題</b></h4>
-                                    <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
-                                </div>     
-                                <div class="col-3 productBox">
-                                    <img src='https://placehold.it/160x160?text=Pic' alt=''/>
-                                    <h4><b>標題標題</b></h4>
-                                    <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
-                                </div>     
-                                <div class="col-3 productBox">
-                                    <img src='https://placehold.it/160x160?text=Pic' alt=''/>
-                                    <h4><b>標題標題</b></h4>
-                                    <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
-                                </div>     
-                                <div class="col-3 productBox">
-                                    <img src='https://placehold.it/160x160?text=Pic' alt=''/>
-                                    <h4><b>標題標題</b></h4>
-                                    <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
-                                </div>  
-                                <div class="col-3 productBox">
-                                    <img src='https://placehold.it/160x160?text=Pic' alt=''/>
-                                    <h4><b>標題標題</b></h4>
-                                    <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
-                                </div>  
-                                <div class="col-3 productBox">
-                                    <img src='https://placehold.it/160x160?text=Pic' alt=''/>
-                                    <h4><b>標題標題</b></h4>
-                                    <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
-                                </div>       
+                    <div class="col">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="cate1" role="tabpanel" aria-labelledby="cate1-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>1標標題標題標題標題題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>1標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>1標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>1標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>1標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="tab-pane fade" id="cate2" role="tabpanel" aria-labelledby="cate2-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>2標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>2標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>2標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>2標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>2標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>2標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                </div>  
+                            </div>
+                            <div class="tab-pane fade" id="cate3" role="tabpanel" aria-labelledby="cate3-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>3標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>3標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>3標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="cate4" role="tabpanel" aria-labelledby="cate4-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>4標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src='https://placehold.it/160x160?text=Pic' alt=''/>
+                                        <h4><b>4標題標題</b></h4>
+                                        <p>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</p>
+                                    </div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                </div>
+                            </div>
+                        </div>  
                     </div>
-                </div>   
+                </div>
             </div>
         </div>   
     </div>
@@ -119,12 +202,14 @@
         (function($){  
             $(window).load(function(){ 
                 $(".content").mCustomScrollbar({
-                    theme:"rounded-dots",
-                    horizontalScroll:false,
+                    setTop: 0,
+                    setLeft:0,
+                    theme:rounded-dots,
+                    horizontalScroll:true,
                     scrollButtons:{enable: true},
                     autoHideScrollbar: true,
-                    mouseWheelPixels: "auto",
-                    scrollInertia: Integer
+                    mouseWheelPixels: auto,
+                    scrollInertia: Integer,
                 });     
             });      
         })(jQuery); 
