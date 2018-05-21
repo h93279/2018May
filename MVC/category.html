@@ -9,15 +9,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/js/jquery.mCustomScrollbar.min.css">
-    <script src="/js/jquery.mCustomScrollbar.min.css"></script>
-    <script>
-        (function($){
-                $(window).load(function(){
-                $(".content").mCustomScrollbar();
-            });
-        })(jQuery);
-    </script>
 </head>
   <body>
     <div class="container-fluid" id="container-fluid">
@@ -182,34 +173,6 @@
             </div>
         </div>   
     </div>
-    <script>
-        (function($){
-            $(window).load(function(){
-                $(".content").mCustomScrollbar();
-            });
-        })(jQuery);
-        $("匹配元素").on("mouseenter mouseleave", function (event) { //挷定滑鼠進入及離開事件
-            if (event.type == "mouseenter") {
-                $(this).css({"overflow-y": "scroll"}); //滑鼠進入
-        } else {
-            $(this).scrollTop(0).css({"overflow-y": "hidden"}); //滑鼠離開
-            }
-        });
-        (function($){  
-            $(window).load(function(){ 
-                $(".content").mCustomScrollbar({
-                    setTop: 0,
-                    setLeft:0,
-                    theme:rounded-dots,
-                    horizontalScroll:true,
-                    scrollButtons:{enable: true},
-                    autoHideScrollbar: true,
-                    mouseWheelPixels: auto,
-                    scrollInertia: Integer,
-                });     
-            });      
-        })(jQuery); 
-    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
